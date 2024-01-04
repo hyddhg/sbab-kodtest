@@ -10,7 +10,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "author": {
     "name": "Jonas Jönsson",
@@ -28,6 +29,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@testing-library/cypress": "^10.0.1",
     "@testing-library/jest-dom": "^6.2.0",
     "@testing-library/react": "^14.1.2",
     "@types/jest": "^29.5.11",

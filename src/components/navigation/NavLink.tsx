@@ -9,6 +9,7 @@ interface NavLinkProps {
   href: string;
   children: ReactNode;
   sx?: SxProps<Theme>;
+  "data-testid"?: string;
 }
 
 /**
@@ -17,7 +18,7 @@ interface NavLinkProps {
  */
 const NavLink = (props: NavLinkProps) => {
   const pathname = usePathname();
-  const { href, children, sx } = props;
+  const { href, children, sx, "data-testid": dataTestId } = props;
 
   return (
     <MuiLink
@@ -25,6 +26,7 @@ const NavLink = (props: NavLinkProps) => {
       component={NextLink}
       href={href}
       sx={sx}
+      data-testid={dataTestId}
     >
       {children}
     </MuiLink>

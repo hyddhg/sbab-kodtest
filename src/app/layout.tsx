@@ -26,8 +26,12 @@ export default function RootLayout(props: RootLayoutProps) {
           <ThemeProvider paletteDark={paletteDark} paletteLight={paletteLight}>
             <Container>
               <Box sx={{ display: "flex", gap: 4, p: 4 }}>
-                <NavLink href="/">Linjetoppen</NavLink>
-                <NavLink href="/kontakt">Kontakt</NavLink>
+                <NavLink href="/" data-testid="home">
+                  Linjetoppen
+                </NavLink>
+                <NavLink href="/kontakt" data-testid="kontakt">
+                  Kontakt
+                </NavLink>
               </Box>
             </Container>
             {children}

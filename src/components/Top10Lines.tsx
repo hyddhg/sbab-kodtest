@@ -70,7 +70,9 @@ export default function Top10Lines(props: Top10LinesProps) {
   return (
     <Container>
       <Box>
-        <Typography variant="h1">Linjetoppen</Typography>
+        <Typography variant="h1" data-testid="title">
+          Linjetoppen
+        </Typography>
         <Typography variant="body1" sx={{ mt: 2, mb: 4 }}>
           Se vilken av SLs busslinjer som har flest stop just nu!
         </Typography>

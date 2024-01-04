@@ -27,4 +27,5 @@ export default defineConfig({
   env: {},
 
   video: false,
+  screenshotOnRunFailure: false,
 });
